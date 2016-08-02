@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>6. Conditional Logic in Java script</title>
+
+ <script type="text/javascript">
+
+  var someValue=24;
+  var otherValue=23;
+/*
+  if(someValue>30){
+    alert("First Case");
+  }
+
+ else if (someValue===30) {
+   alert("Second case");
+ }
+
+ else if (someValue===25) {
+   alert("Third Case");
+ }
+
+else{
+  alert("Fourth Case");
+}
+
+
+if(someValue>20 && otherValue>20){
+  alert("Fifth Case");
+}
+
+if(someValue===24 || otherValue===24){
+  alert("Sixth case");
+}
+/*
+someValue=false;
+
+if(someValue!==24){
+
+}
+
+if(!someValue){
+
+}
+*/
+
+// var myResult="";
+// myResult=(someValue===24) ? "equal":"not Equal";
+//
+// alert(myResult);
+
+// var userName="Rimmer1";
+//
+// switch (userName) {
+//   case "Lister":
+//     document.write("Care for a good curry?");
+//     break;
+//     case "Rimmer":
+//     document.write("Welcome Back ,smeg head");
+//     break;
+//   default:
+//     document.write("Are you an emohawk?");
+// }
+
+var rightNow = new Date();
+var currentHour=rightNow.getHours();
+switch (true) {
+  case (currentHour >8 && currentHour<12):
+       document.write("Morning, Sunshine!");
+    break;
+    case (currentHour ===12):
+         document.write("Lunch Time!");
+      break;
+      case (currentHour >12 && currentHour<18):
+           document.write("Fight the Urge To siesta!");
+        break;
+
+  default:
+    document.write("Careful sparky ,they'll think you're a hard worker!");
+}
+
+ </script>
+</head>
+
+<body>
+<h1>6. Conditional Logic in JavaScript</h1>
+</body>
+</html>
